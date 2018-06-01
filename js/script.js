@@ -18,8 +18,8 @@ for (let i = 0; i < 5; i++) {
 		mainList.shopGoods[i] = a;
 	} else {
 		alert('введите тип товаров');
+		i--;
 	}
-	i++;
 }
 
 /*let i = 0;
