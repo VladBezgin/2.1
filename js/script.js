@@ -3,8 +3,8 @@ let name = prompt("Название вашего магазина?");
 let time = 19;
 
 let mainList = {
-	'budget': budgetForTheMonth,
-	'name': name,
+	budget: budgetForTheMonth,
+	name: name,
 	shopGoods: [],
 	employers: {},
 	open,
@@ -13,15 +13,13 @@ let mainList = {
 
 for (let i = 0; i < 5; i++) {
 	let a =  prompt("Какой тип товаров будем продавать?");
-	mainList.shopGoods[i] = a;
 	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50 ) {
 		console.log('все верно');
-	
+		mainList.shopGoods[i] = a;
 	} else {
 		alert('введите тип товаров');
-		i++;
 	}
-
+	i++;
 }
 
 /*let i = 0;
